@@ -1,0 +1,79 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+
+# Compiled Java classes
+*.class
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# Maven target directory
+target/
+
+# Maven dependency directory
+.mvn/
+
+# IDE-specific files
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Spring Boot application properties (if containing sensitive data)
+src/main/resources/application.properties
+src/main/resources/application.yml
+src/main/resources/application-*.properties
+src/main/resources/application-*.yml
+
+# Docker files
+.dockerignore
+docker-compose.yml
+
+# Environment and secrets
+.env
+secrets/
+
+# Ignore build output directories
+/build/
+
