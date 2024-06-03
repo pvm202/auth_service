@@ -61,19 +61,4 @@ target/
 Thumbs.db
 
 # Spring Boot application properties (if containing sensitive data)
-src/main/resources/application.properties
-src/main/resources/application.yml
-src/main/resources/application-*.properties
-src/main/resources/application-*.yml
-
-# Docker files
-.dockerignore
-docker-compose.yml
-
-# Environment and secrets
-.env
-secrets/
-
-# Ignore build output directories
-/build/
 

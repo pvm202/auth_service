@@ -36,6 +36,8 @@ public class AuthController {
                 
                 // Generate token logic (not implemented here)
                 
+                
+                
                 return ResponseEntity.status(HttpStatus.OK).body("Token generated");
                 
                 
