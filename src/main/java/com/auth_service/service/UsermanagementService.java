@@ -7,7 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.client.HttpClientErrorException.NotFound;
 import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.RestTemplate;
 
@@ -17,7 +16,9 @@ import com.auth_service.models.AuthRequest;
 public class UsermanagementService {
 
 	@Autowired
-	private RestTemplate restTemplate;
+	private  RestTemplate restTemplate;
+	
+	
 
 	private static final Logger logger = LoggerFactory.getLogger(UsermanagementService.class);
 

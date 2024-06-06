@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.HttpClientErrorException;
 
+import com.auth_service.jwt.JwtHelper;
 import com.auth_service.models.AuthRequest;
+import com.auth_service.models.JwtResponse;
 import com.auth_service.service.UsermanagementService;
 
 @RestController
@@ -20,6 +22,12 @@ public class AuthController {
 
     @Autowired
     private UsermanagementService usermanagementService;
+    
+    @Autowired
+    private JwtHelper jwtHelper;
+    
+    
+ 
 
     private static final Logger logger = LoggerFactory.getLogger(AuthController.class);
 
@@ -35,10 +43,10 @@ public class AuthController {
                 
                 
                 // Generate token logic (not implemented here)
+               String  token= jwtHelper.generateToken(authRequest);
+                System.out.println("token generated  -"+token);
                 
-                
-                
-                return ResponseEntity.status(HttpStatus.OK).body("Token generated");
+                return ResponseEntity.status(HttpStatus.OK).body(new JwtResponse(token));
                 
                 
             } 

@@ -48,9 +48,12 @@
 <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
 <dependency>
     <groupId>io.jsonwebtoken</groupId>
-    <artifactId>jjwt</artifactId>
+    <artifactId>jjwt-impl</artifactId>
     <version>0.12.5</version>
 </dependency>
+
+
+
 
 
 		<dependency>
